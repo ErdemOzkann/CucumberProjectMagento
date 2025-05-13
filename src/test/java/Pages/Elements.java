@@ -70,6 +70,37 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//*[text()='Thank you for registering with Main Website Store.']")
     public WebElement registrationMsg;
 
+    @FindBy(xpath = "//*[@class='action switch'] [1]")
+    public WebElement downbutton;
+
+    @FindBy(xpath = "//*[text()='My Account'] [1]")
+    public WebElement myaccount;
+
+    @FindBy(xpath = "//*[text()='Manage Addresses']")
+    public WebElement manageaddress;
+
+    @FindBy(xpath = "//*[@class='action primary add']")
+    public WebElement addaddress;
+
+    @FindBy(xpath = "//*[@id='street_1']")
+    public WebElement street1;
+
+    @FindBy(xpath = "//*[@id='city']")
+    public WebElement city;
+
+    @FindBy(xpath = "//*[@id='telephone']")
+    public WebElement phone;
+
+    @FindBy(xpath = "//*[@id='primary_shipping']")
+    public WebElement shippingaddress;
+
+    @FindBy(xpath = "//*[@class='action save primary']")
+    public WebElement savebutton;
+
+    @FindBy(xpath = "//*[@id='zip']")
+    public WebElement postalcode;
+
+
 
 
     public WebElement getWebElement(String strElement) {
@@ -82,3 +113,4 @@ public class Elements extends ParentPage {
         return null;
     }
 }
+
