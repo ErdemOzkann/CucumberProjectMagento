@@ -117,7 +117,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//div[@class='swatch-option color']")
     public List <WebElement> color;
 
-
     @FindBy(id = "qty")
     public WebElement qty;
 
