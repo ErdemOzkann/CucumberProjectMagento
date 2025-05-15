@@ -64,7 +64,6 @@ public class GWD {
             driver=null;                         // değişkene NULL değerini ata
             threadDriver.set(driver);            // thread e bu değişkeni set et
         }
+        logger.info("Test Bitti.");
     }
-
-
 }
