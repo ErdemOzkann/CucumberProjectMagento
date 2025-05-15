@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class TC_706_SearchFunctionalitySteps extends GWD {
+public class TC_707_SearchFunctionalitySteps extends GWD {
 
     Elements el = new Elements();
 
@@ -54,9 +54,9 @@ public class TC_706_SearchFunctionalitySteps extends GWD {
 
     @And("The user verifies the product is correct and decides to place an order")
     public void theUserVerifiesTheProductIsCorrectAndDecidesToPlaceAnOrder() {
-        el.myClick(el.size);
-        el.myClick(el.color);
-        el.myClick(el.addToCart);
+        el.myClick(el.size2);
+        el.myClick(el.color2);
+        el.myClick(el.addToCart2);
     }
 
     @When("The user enters {string} into the search bar")

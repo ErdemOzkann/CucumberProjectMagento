@@ -92,7 +92,7 @@ public class Elements extends ParentPage {
 
     @FindBy(xpath = "//div[@class='message-success success message']/div")
     public WebElement HasBeenUpdatedWishListText;
-=======
+
     @FindBy(id = "accept-btn")
     public WebElement acceptBtn;
 
@@ -145,13 +145,13 @@ public class Elements extends ParentPage {
     public WebElement productNumber;
 
     @FindBy(id = "option-label-size-143-item-169")
-    public WebElement size;
+    public WebElement size2;
 
     @FindBy(id = "option-label-color-93-item-52")
-    public WebElement color;
+    public WebElement color2;
 
     @FindBy(id = "product-addtocart-button")
-    public WebElement addToCart;
+    public WebElement addToCart2;
 
     @FindBy(css = "[type='submit'][title='Search']")
     public WebElement searchBttn;

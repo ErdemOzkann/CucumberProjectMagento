@@ -1,6 +1,6 @@
 Feature: Search functionality using SKU
   Background:
-    Given Navigate to magento webpage
+    Given Navigate to Magento
     And Click to Signin button
     When Enter Email and password "cucumberproje1@hotmail.com" and "Team1Team" and click to SignIn button
     And User should be Sigin succesfully
