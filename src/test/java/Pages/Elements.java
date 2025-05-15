@@ -72,6 +72,46 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//*[text()='Thank you for registering with Main Website Store.']")
     public WebElement registrationMsg;
 
+
+    @FindBy(id = "search")
+    public WebElement search;
+
+    @FindBy(css = "[class='product-item-link']")
+    public WebElement LandoGymJacket;
+
+    @FindBy(css = "[class='logo'] img")
+    public WebElement homePage;
+
+    @FindBy(xpath = "//*[text()='Men']")
+    public WebElement hmMen;
+
+    @FindBy(id = "ui-id-17")
+    public WebElement hmTops;
+
+    @FindBy(id = "ui-id-19")
+    public WebElement hmJackets;
+
+    @FindBy(css = "[class='products list items product-items']>:nth-child(7)")
+    public WebElement clickLandoGymJacket;
+
+    @FindBy(xpath = "//*[text()='MJ08']")
+    public WebElement productNumber;
+
+    @FindBy(id = "option-label-size-143-item-169")
+    public WebElement size;
+
+    @FindBy(id = "option-label-color-93-item-52")
+    public WebElement color;
+
+    @FindBy(id = "product-addtocart-button")
+    public WebElement addToCart;
+
+    @FindBy(css = "[type='submit'][title='Search']")
+    public WebElement searchBttn;
+
+    @FindBy(css = "[class='message notice'] div")
+    public WebElement errorMsg;
+  
     @FindBy(xpath = "//*[@class='action switch'] [1]")
     public WebElement downbutton;
 
