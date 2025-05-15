@@ -112,10 +112,10 @@ public class Elements extends ParentPage {
     public WebElement addedText;
 
     @FindBy(xpath = "//div[@class='swatch-option text']")
-    public List <WebElement> size;
+    public List<WebElement> size;
 
     @FindBy(xpath = "//div[@class='swatch-option color']")
-    public List <WebElement> color;
+    public List<WebElement> color;
 
     @FindBy(id = "qty")
     public WebElement qty;
@@ -141,6 +141,59 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//tr[@class='grand totals']")
     public WebElement totalText;
 
+    @FindBy(id = "top-cart-btn-checkout")
+    public WebElement checkOut;
+
+    @FindBy(css = "[class='shipping-address-items'] div")
+    public List<WebElement> addressList;
+
+    @FindBy(css = "[class='action action-show-popup']")
+    public WebElement newAddressBTN;
+
+    @FindBy(css = "[name='street[0]']")
+    public WebElement streetAddress;
+
+    @FindBy(css = "[name='city']")
+    public WebElement cityAddress;
+
+    @FindBy(css = "[name='region_id']")
+    public WebElement stateAddress;
+
+    @FindBy(css = "[name='postcode']")
+    public WebElement postCodeAddress;      //  country_id
+
+    @FindBy(css = "[name='country_id']")
+    public WebElement countryAddress;
+
+    @FindBy(css = "[name='telephone']")
+    public WebElement telAddress;
+
+    @FindBy(css = "[class='button action continue primary']")
+    public WebElement nextBTN;
+
+    @FindBy(css = "[class='col col-method'] input")
+    public List<WebElement> shipMethods;
+
+    @FindBy(id = "billing-address-same-as-shipping-checkmo")
+    public WebElement sameAddressBTN;
+
+    @FindBy(css = "[class='action primary action-save-address']")
+    public WebElement saveAddressBTN;
+
+    @FindBy(css = "[data-bind='i18n: getGroupTitle($group)']")
+    public WebElement paymentTitle;
+
+    @FindBy(css = "[data-bind='i18n: 'Place Order'']")
+    public WebElement placeOrder;
+
+    @FindBy(css = "[data-ui-id='page-title-wrapper']")
+    public WebElement purchaseMSG;
+
+    @FindBy(css = "[class='order-number']")
+    public WebElement orderNumber;
+
+
+
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
             case "SignInEmail":
@@ -155,6 +208,18 @@ public class Elements extends ParentPage {
                 return this.deleteButton;
             case "okButton":
                 return this.okButton;
+            case "createAccountButton":
+                return this.createAccountButton;
+            case "Proceed to checkout":
+                return this.checkOut;
+            case "New Address":
+                return this.newAddressBTN;
+            case "Next":
+                return this.nextBTN;
+            case "Payment Method":
+                return this.paymentTitle;
+            case "Place Order" :
+                return this.placeOrder;
         }
         return null;
     }

@@ -14,7 +14,6 @@
 
     </Appenders>
 
-
     <Loggers>  <!--  Aktif etme bölümü-->
 
         <Root level="INFO"> <!--        # logger options: ALL -> DEBUG -> INFO -> WARN -> ERROR -> FATAL -> OFF-->
@@ -23,8 +22,5 @@
         </Root>
 
     </Loggers>
-
-
-
 
 </Configuration>
