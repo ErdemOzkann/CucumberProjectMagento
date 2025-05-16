@@ -44,7 +44,7 @@ public class TC_701_UserRegistrationSteps extends GWD {
 
     @And("The user clicks the {string} button")
     public void theUserClicksTheButton(String caButton) {
-        el.createAccountButton.click();
+        el.myClick(el.getWebElement(caButton));
     }
 
     @Then("The user should see a success message and be logged into the site")
