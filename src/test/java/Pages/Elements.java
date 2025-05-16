@@ -100,6 +100,38 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//*[@id='zip']")
     public WebElement postalcode;
 
+    @FindBy(xpath = "//*[@id='region_id']")
+    public WebElement state;
+
+    @FindBy(xpath = "//*[@role='delete-address'] [1]")
+    public WebElement delete;
+
+    @FindBy(xpath = "//*[@data-th='Actions']/a/span [1]")
+    public WebElement edit;
+
+    @FindBy(xpath = "//*[text()='You deleted the address.']")
+    public WebElement deletemessage;
+
+    @FindBy(xpath = "//*[@data-bind='html: $parent.prepareMessageForHtml(message.text)']")
+    public  WebElement savemessage;
+
+    @FindBy(xpath = "//*[@id='country']")
+    public WebElement countryDropdown;
+
+    @FindBy(xpath = "//*[@id='primary_billing']")
+    public WebElement billingaddress;
+
+    @FindBy(xpath = "//*[text()='Additional Address Entries']")
+    public WebElement addresslistpage;
+
+
+    @FindBy(xpath = "//*[@class='action-primary action-accept']")
+    public WebElement ok;
+
+
+
+
+
 
 
 
