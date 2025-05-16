@@ -69,3 +69,5 @@ Feature: Icons in the tab menu work control
 
     And clicks on the Sale ikon
     Then the Sale category page should be displayed
+
+
