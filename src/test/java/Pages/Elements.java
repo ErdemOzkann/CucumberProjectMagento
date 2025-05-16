@@ -270,7 +270,7 @@ public class Elements extends ParentPage {
     @FindBy(css = "[data-bind='i18n: getGroupTitle($group)']")
     public WebElement paymentTitle;
 
-    @FindBy(css = "[data-bind='i18n: 'Place Order'']")
+    @FindBy(css = "[class='action primary checkout']")
     public WebElement placeOrder;
 
     @FindBy(css = "[data-ui-id='page-title-wrapper']")
