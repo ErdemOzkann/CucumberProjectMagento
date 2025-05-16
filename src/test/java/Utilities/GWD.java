@@ -16,8 +16,10 @@ public class GWD {
     public static Logger logger = LogManager.getLogger();
     private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();// thread e özel driver
     public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
+    
     //driver -> threadDriver.get() -> bulunduğum thread deki driver ı al
     //threadDriver.set(driver) -> bulunduğum threade driver set et
+
 
     public static WebDriver getDriver() {
         Locale.setDefault(new Locale("EN"));
