@@ -285,6 +285,8 @@ public class Elements extends ParentPage {
 
 
 
+
+
     @FindBy(xpath = "//span[text()='Training']")
     public WebElement training;
 

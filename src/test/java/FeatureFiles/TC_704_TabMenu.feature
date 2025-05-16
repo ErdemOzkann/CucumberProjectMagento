@@ -50,6 +50,7 @@ Feature: Icons in the tab menu work control
 
 
 
+
     When the user hovers over Gear > Bags And clicks on Bags
     Then the Bags category page should be displayed
 

@@ -17,6 +17,8 @@ public class ParentPage {
         scrollToElement(e);
         e.clear();
         e.sendKeys(text);
+
+
     }
 
     public void myClick(WebElement e)
