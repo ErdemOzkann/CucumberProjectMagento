@@ -189,6 +189,33 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//*[@id='zip']")
     public WebElement postalcode;
 
+    @FindBy(xpath = "//*[@id='region_id']")
+    public WebElement state;
+
+    @FindBy(xpath = "//*[@role='delete-address'] [1]")
+    public WebElement delete;
+
+    @FindBy(xpath = "//*[@data-th='Actions']/a/span [1]")
+    public WebElement edit;
+
+    @FindBy(xpath = "//*[text()='You deleted the address.']")
+    public WebElement deletemessage;
+
+    @FindBy(xpath = "//*[@data-bind='html: $parent.prepareMessageForHtml(message.text)']")
+    public  WebElement savemessage;
+
+    @FindBy(xpath = "//*[@id='country']")
+    public WebElement countryDropdown;
+
+    @FindBy(xpath = "//*[@id='primary_billing']")
+    public WebElement billingaddress;
+
+    @FindBy(xpath = "//*[text()='Additional Address Entries']")
+    public WebElement addresslistpage;
+
+    @FindBy(xpath = "//*[@class='action-primary action-accept']")
+    public WebElement ok;
+
     @FindBy(xpath = "//ol[@class='product-items widget-product-grid']//li")
     public List<WebElement> productList;
 
@@ -247,7 +274,7 @@ public class Elements extends ParentPage {
     public WebElement stateAddress;
 
     @FindBy(css = "[name='postcode']")
-    public WebElement postCodeAddress;      //  country_id
+    public WebElement postCodeAddress;     
 
     @FindBy(css = "[name='country_id']")
     public WebElement countryAddress;
@@ -278,49 +305,12 @@ public class Elements extends ParentPage {
 
     @FindBy(css = "[class='order-number']")
     public WebElement orderNumber;
-
-
-
-    public WebElement getWebElement(String strElement) {
-        switch (strElement) {
-            case "SignInEmail":
-                return this.SignInEmail;
-            case "SignInPassword":
-                return this.SignInPassword;
-            case "addToCart":
-                return this.addToCart;
-            case "cartButton":
-                return this.cartButton;
-            case "deleteButton":
-                return this.deleteButton;
-            case "okButton":
-                return this.okButton;
-            case "createAccountButton":
-                return this.createAccountButton;
-            case "Proceed to checkout":
-                return this.checkOut;
-            case "New Address":
-                return this.newAddressBTN;
-            case "Next":
-                return this.nextBTN;
-            case "Payment Method":
-                return this.paymentTitle;
-            case "Place Order" :
-                return this.placeOrder;
-        }
-        return null;
-    }
-
-
-
+  
     @FindBy(xpath = "(//*[@class='level-top ui-corner-all'])[1]/span")
     public WebElement whatsnewikon;
 
     @FindBy(xpath = "//*[@id='page-title-heading']/span")
     public WebElement whatsnewassert;
-
-
-
 
     @FindBy(xpath = "//span[text()='Women']")
     public WebElement womenikon;
@@ -367,9 +357,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Shorts'])[3]")
     public WebElement shortsassert;
 
-
-
-
     @FindBy(xpath = "//span[text()='Men']")
     public WebElement menikon;
 
@@ -415,7 +402,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Shorts'])[3]")
     public WebElement shortsmenassert;
 
-
     @FindBy(id = "ui-id-6")
     public WebElement gear;
 
@@ -437,10 +423,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Watches'])[2]")
     public WebElement watchesassert;
 
-
-
-
-
     @FindBy(xpath = "//span[text()='Training']")
     public WebElement training;
 
@@ -450,9 +432,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Video Download'])[2]")
     public WebElement videodownloadassert;
 
-
-
-
     @FindBy(xpath = "//span[text()='Sale']")
     public WebElement sale;
 
@@ -460,16 +439,34 @@ public class Elements extends ParentPage {
     public WebElement saleassert;
 
 
-
-
-
-
-
-
-
-
-
-
-
+    public WebElement getWebElement(String strElement) {
+        switch (strElement) {
+            case "SignInEmail":
+                return this.SignInEmail;
+            case "SignInPassword":
+                return this.SignInPassword;
+            case "addToCart":
+                return this.addToCart;
+            case "cartButton":
+                return this.cartButton;
+            case "deleteButton":
+                return this.deleteButton;
+            case "okButton":
+                return this.okButton;
+            case "createAccountButton":
+                return this.createAccountButton;
+            case "Proceed to checkout":
+                return this.checkOut;
+            case "New Address":
+                return this.newAddressBTN;
+            case "Next":
+                return this.nextBTN;
+            case "Payment Method":
+                return this.paymentTitle;
+            case "Place Order" :
+                return this.placeOrder;
+        }
+        return null;
+    }
 }
 
