@@ -3,6 +3,7 @@ Feature: Login Functionality With Valid and Invalid Info
   Background:
     Given Navigate to magento webpage
 
+  @Smoke @Regression
   Scenario: Login test with valid input
 
     And Click to Signin button
@@ -10,6 +11,7 @@ Feature: Login Functionality With Valid and Invalid Info
 
     And User should be Sigin succesfully
 
+  @Smoke @Regression
   Scenario Outline: Login test with invalid input
 
     And Click to Signin button
@@ -25,6 +27,7 @@ Feature: Login Functionality With Valid and Invalid Info
       | cucumberproje1@hotmail.com | TTeamTea   |
       | yawhehee@hotmail.com       | TemelReizz |
 
+  @Smoke @Regression
   Scenario Outline: Forgot Your Password test
 
     Given Click to Forgot Your Password button

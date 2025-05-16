@@ -83,6 +83,7 @@ public class TC_708_WishList extends GWD {
     }
 
     int selectedIndex = -1;
+
     @Then("Hover over the product")
     public void hoverOverTheProduct() {
 
@@ -157,19 +158,19 @@ public class TC_708_WishList extends GWD {
 
         List<WebElement> loc6 = element.Sizes;
 
-        int rnd1= (int) (Math.random() * loc6.size());
+        int rnd1 = (int) (Math.random() * loc6.size());
 
         if (!loc6.isEmpty())
             element.Sizes.get(rnd1).click();
 
         List<WebElement> loc7 = element.Colors;
 
-        int rnd2= (int) (Math.random() * loc7.size());
+        int rnd2 = (int) (Math.random() * loc7.size());
 
         if (!loc7.isEmpty())
             element.Colors.get(rnd2).click();
 
-        int rnd3= (int) (Math.random() * 15);
+        int rnd3 = (int) (Math.random() * 15);
 
         element.Qty.clear();
 

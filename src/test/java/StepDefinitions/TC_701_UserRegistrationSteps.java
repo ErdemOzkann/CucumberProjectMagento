@@ -20,11 +20,13 @@ public class TC_701_UserRegistrationSteps extends GWD {
     @Given("Navigate to Magento")
     public void navigate_to_magento() {
         GWD.getDriver().get("https://magento.softwaretestingboard.com/");
-        el.myClick(el.acceptBtn);
+
+        if (!el.acceptBtn.isEmpty())
+            el.myClick(el.acceptBtn.get(0));
     }
 
     @When("The user accesses the registration form")
-    public void theUserAccessesTheRegistrationForm(){
+    public void theUserAccessesTheRegistrationForm() {
         el.myClick(el.createAnAccount);
     }
 

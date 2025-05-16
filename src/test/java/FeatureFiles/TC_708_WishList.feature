@@ -9,6 +9,7 @@ Feature: Create Wish List Functionality
 
     And User should be Sigin succesfully
 
+  @Regression
   Scenario: Adding product to Add To Wishlist function
 
     Given Go to the page of a product you like
@@ -17,6 +18,7 @@ Feature: Create Wish List Functionality
 
     And The product added message should be displayed
 
+  @Regression
   Scenario:Remove product from Wishlist function
 
     Given Click the "My Account" and the "My Wish List" buttons
@@ -27,7 +29,8 @@ Feature: Create Wish List Functionality
 
     And Verify the product is removed
 
-    Scenario: Wishlist update function
+  @Regression
+  Scenario: Wishlist update function
 
     Given Click the "My Account" and the "My Wish List" buttons
 

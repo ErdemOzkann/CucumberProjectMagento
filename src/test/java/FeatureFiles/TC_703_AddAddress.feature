@@ -6,7 +6,7 @@ Feature: Manage addresses in the Address Book
     When Enter Email and password "cucumberproje1@hotmail.com" and "Team1Team" and click to SignIn button
     And User should be Sigin succesfully
 
-
+  @Regression
   Scenario Outline: User adds, edits, and deletes an address
     When The user clicks the "My Account" link
     And Clicks the "Manage Address" link

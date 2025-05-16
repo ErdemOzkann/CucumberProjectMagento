@@ -30,7 +30,7 @@ public class TC_705_AddRemoveToCart extends GWD {
 
     @When("User click the button")
     public void userClickTheButton(DataTable dataTable) {
-        List<String> buttons= dataTable.asList();
+        List<String> buttons = dataTable.asList();
 
         for (int i = 0; i < buttons.size(); i++) {
             el.myClick(el.getWebElement(buttons.get(i)));

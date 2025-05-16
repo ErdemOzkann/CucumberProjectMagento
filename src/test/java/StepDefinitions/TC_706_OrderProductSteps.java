@@ -13,7 +13,7 @@ public class TC_706_OrderProductSteps {
 
     @And("The user sees one of the registered default shipping addresses. If no address is available, the user creates a new one.")
     public void theUserSeesOneOfTheDefaultShippingAddressesRegisteredIfNoAddressIsAvailable() {
-        e.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.cssSelector("[class='shipping-address-items'] div"),0));
+        e.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.cssSelector("[class='shipping-address-items'] div"), 0));
         if (e.addressList.isEmpty()) {
             e.myClick(e.newAddressBTN);
             e.mySendKeys(e.streetAddress, "Manhattan");
@@ -30,7 +30,7 @@ public class TC_706_OrderProductSteps {
 
     @And("The user selects a shipping method by clicking a random radio button")
     public void theUserSelectsAShippingMethodByClickingARandomRadioButton() {
-        e.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.cssSelector("[class='col col-method'] input"),0));
+        e.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.cssSelector("[class='col col-method'] input"), 0));
         int rnd = (int) (Math.random() * e.shipMethods.size());
         if (!e.shipMethods.get(rnd).isSelected()) {
             e.myClick(e.shipMethods.get(rnd));
@@ -39,7 +39,7 @@ public class TC_706_OrderProductSteps {
 
     @Then("The user is redirected to the {string} page")
     public void theUserIsRedirectedToThePage(String page) {
-        e.wait.until(ExpectedConditions.textToBePresentInElement(e.getWebElement(page),"Payment Method"));
+        e.wait.until(ExpectedConditions.textToBePresentInElement(e.getWebElement(page), "Payment Method"));
         Assert.assertTrue(e.getWebElement(page).getText().contains("Payment Method"), "Wrong Page");
     }
 
@@ -55,7 +55,7 @@ public class TC_706_OrderProductSteps {
 
     @And("The user sees the success message on the Success Page and the user sees the order number")
     public void theUserSeesTheSuccessMessageOnThe() {
-        e.wait.until(ExpectedConditions.textToBePresentInElement(e.purchaseMSG,"Thank you for your purchase!"));
+        e.wait.until(ExpectedConditions.textToBePresentInElement(e.purchaseMSG, "Thank you for your purchase!"));
         Assert.assertEquals(e.purchaseMSG.getText(), "Thank you for your purchase!");
         Assert.assertTrue(e.orderNumber.isEnabled(), "Order number is not visible");
     }

@@ -33,9 +33,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//a[@class='action remind']/span")
     public WebElement ForgotYourPasswordButton;
 
-    @FindBy(xpath = "//h1[@class='page-title']/span")
-    public WebElement FYPassText;
-
     @FindBy(xpath = "//input[@id='email_address']")
     public WebElement ForgotYourPasswordEmail;
 
@@ -94,7 +91,7 @@ public class Elements extends ParentPage {
     public WebElement HasBeenUpdatedWishListText;
 
     @FindBy(id = "accept-btn")
-    public WebElement acceptBtn;
+    public List<WebElement> acceptBtn;
 
     @FindBy(xpath = "//*[text()='Create an Account']")
     public WebElement createAnAccount;
@@ -158,7 +155,7 @@ public class Elements extends ParentPage {
 
     @FindBy(css = "[class='message notice'] div")
     public WebElement errorMsg;
-  
+
     @FindBy(xpath = "//*[@class='action switch'] [1]")
     public WebElement downbutton;
 
@@ -189,9 +186,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "//*[@id='zip']")
     public WebElement postalcode;
 
-    @FindBy(xpath = "//*[@id='region_id']")
-    public WebElement state;
-
     @FindBy(xpath = "//*[@role='delete-address'] [1]")
     public WebElement delete;
 
@@ -202,7 +196,7 @@ public class Elements extends ParentPage {
     public WebElement deletemessage;
 
     @FindBy(xpath = "//*[@data-bind='html: $parent.prepareMessageForHtml(message.text)']")
-    public  WebElement savemessage;
+    public WebElement savemessage;
 
     @FindBy(xpath = "//*[@id='country']")
     public WebElement countryDropdown;
@@ -274,7 +268,7 @@ public class Elements extends ParentPage {
     public WebElement stateAddress;
 
     @FindBy(css = "[name='postcode']")
-    public WebElement postCodeAddress;     
+    public WebElement postCodeAddress;
 
     @FindBy(css = "[name='country_id']")
     public WebElement countryAddress;
@@ -305,7 +299,7 @@ public class Elements extends ParentPage {
 
     @FindBy(css = "[class='order-number']")
     public WebElement orderNumber;
-  
+
     @FindBy(xpath = "(//*[@class='level-top ui-corner-all'])[1]/span")
     public WebElement whatsnewikon;
 
@@ -339,9 +333,6 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Bras & Tanks'])[1]")
     public WebElement bras_tanks;
 
-    @FindBy(xpath = "(//span[text()='Bras & Tanks'])[2]")
-    public WebElement bras_tanksassert;
-
     @FindBy(xpath = "(//span[text()='Bottoms'])[1]")
     public WebElement bottoms;
 
@@ -366,26 +357,14 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Jackets'])[2]")
     public WebElement jacketsmen;
 
-    @FindBy(xpath = "(//span[text()='Jackets'])[3]")
-    public WebElement jacketsmenassert;
-
     @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[2]")
     public WebElement hoodies_sweatshirtsmen;
-
-    @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[3]")
-    public WebElement hoodies_sweatshirtsmenassert;
 
     @FindBy(xpath = "(//span[text()='Tees'])[2]")
     public WebElement teesmen;
 
-    @FindBy(xpath = "(//span[text()='Tees'])[3]")
-    public WebElement teesmenassert;
-
     @FindBy(xpath = "//span[text()='Tanks']")
     public WebElement tanksmen;
-
-    @FindBy(xpath = "(//span[text()='Tanks'])[2]")
-    public WebElement tanksmenassert;
 
     @FindBy(xpath = "(//span[text()='Bottoms'])[2]")
     public WebElement bottomsmen;
@@ -393,14 +372,8 @@ public class Elements extends ParentPage {
     @FindBy(xpath = "(//span[text()='Pants'])[2]")
     public WebElement pantsmen;
 
-    @FindBy(xpath = "(//span[text()='Pants'])[3]")
-    public WebElement pantsmenassert;
-
     @FindBy(xpath = "(//span[text()='Shorts'])[2]")
     public WebElement shortsmen;
-
-    @FindBy(xpath = "(//span[text()='Shorts'])[3]")
-    public WebElement shortsmenassert;
 
     @FindBy(id = "ui-id-6")
     public WebElement gear;
@@ -440,6 +413,7 @@ public class Elements extends ParentPage {
 
 
     public WebElement getWebElement(String strElement) {
+
         switch (strElement) {
             case "SignInEmail":
                 return this.SignInEmail;
@@ -453,7 +427,7 @@ public class Elements extends ParentPage {
                 return this.deleteButton;
             case "okButton":
                 return this.okButton;
-            case "createAccountButton":
+            case "Create an Account":
                 return this.createAccountButton;
             case "Proceed to checkout":
                 return this.checkOut;
@@ -463,7 +437,7 @@ public class Elements extends ParentPage {
                 return this.nextBTN;
             case "Payment Method":
                 return this.paymentTitle;
-            case "Place Order" :
+            case "Place Order":
                 return this.placeOrder;
         }
         return null;

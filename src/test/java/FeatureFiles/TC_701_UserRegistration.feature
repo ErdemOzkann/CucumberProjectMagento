@@ -1,6 +1,6 @@
 Feature: User Registration
 
-
+  @Smoke @Regression
   Scenario: User successfully registers on the Magento website
 
     Given Navigate to Magento

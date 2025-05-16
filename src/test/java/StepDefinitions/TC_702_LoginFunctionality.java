@@ -63,7 +63,7 @@ public class TC_702_LoginFunctionality extends GWD {
 
         elements.wait.until(ExpectedConditions.textToBePresentInElement(elements.incorrect, "incorrect"));
 
-       Assert.assertTrue(elements.incorrect.getText().contains("incorrect"));
+        Assert.assertTrue(elements.incorrect.getText().contains("incorrect"));
     }
 
 

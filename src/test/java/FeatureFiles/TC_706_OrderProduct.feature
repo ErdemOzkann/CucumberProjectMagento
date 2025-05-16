@@ -6,6 +6,7 @@ Feature: Order Completion Functionality
     When Enter Email and password "cucumberproje1@hotmail.com" and "Team1Team" and click to SignIn button
     And User should be Sigin succesfully
 
+  @Smoke @Regression
   Scenario: User successfully completes the order
 
     Given User click random product from homepage

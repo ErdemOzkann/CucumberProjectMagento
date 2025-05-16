@@ -17,7 +17,7 @@ public class TC_707_SearchFunctionalitySteps extends GWD {
 
     @When("The user enters {string} into the search bar and presses Enter")
     public void theUserEntersStringIntoTheSearchBar(String arg0) {
-        el.mySendKeys(el.search,"MJ08"+ Keys.ENTER);
+        el.mySendKeys(el.search, "MJ08" + Keys.ENTER);
     }
 
     @Then("The product {string} should be displayed in the search results")
@@ -33,7 +33,7 @@ public class TC_707_SearchFunctionalitySteps extends GWD {
 
     @When("The user navigates through the menu by clicking {string} > {string} > {string}")
     public void theUserNavigatesThroughTheMenuByClicking(String arg0, String arg1, String arg2) {
-        Actions actions=new Actions(getDriver());
+        Actions actions = new Actions(getDriver());
         actions
                 .moveToElement(el.hmMen)
                 .moveToElement(el.hmTops)
@@ -49,7 +49,7 @@ public class TC_707_SearchFunctionalitySteps extends GWD {
     @Then("The product SKU should be displayed as {string}")
     public void theProductSKUShouldBeDisplayedAs(String arg0) {
         el.wait.until(ExpectedConditions.visibilityOf(el.productNumber));
-        Assert.assertEquals(el.productNumber.getText(),"MJ08","Mesajlar Eslesmiyor");
+        Assert.assertEquals(el.productNumber.getText(), "MJ08", "Mesajlar Eslesmiyor");
     }
 
     @And("The user verifies the product is correct and decides to place an order")
@@ -61,7 +61,7 @@ public class TC_707_SearchFunctionalitySteps extends GWD {
 
     @When("The user enters {string} into the search bar")
     public void theUserEntersIntoTheSearchBar(String arg0) {
-        el.mySendKeys(el.search,"INVALID123");
+        el.mySendKeys(el.search, "INVALID123");
     }
 
     @And("Clicks the search icon")
@@ -72,6 +72,6 @@ public class TC_707_SearchFunctionalitySteps extends GWD {
     @Then("A message {string} should be displayed")
     public void aMessageShouldBeDisplayed(String arg0) {
         el.wait.until(ExpectedConditions.visibilityOf(el.errorMsg));
-        Assert.assertEquals(el.errorMsg.getText(),"Your search returned no results.","Not found");
+        Assert.assertEquals(el.errorMsg.getText(), "Your search returned no results.", "Not found");
     }
 }

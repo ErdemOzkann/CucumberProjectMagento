@@ -6,9 +6,9 @@ Feature: Icons in the tab menu work control
     When Enter Email and password "cucumberproje1@hotmail.com" and "Team1Team" and click to SignIn button
     And User should be Sigin succesfully
 
+  @Smoke @Regression
   Scenario: Tab Menu functionality
 
-  `
     And clicks on the What's New ikon
     Then the What's New category page should be displayed
 
@@ -29,8 +29,6 @@ Feature: Icons in the tab menu work control
     When the user hovers over Women > Bottoms > Shorts And clicks on Shorts
     Then the Shorts category page should be displayed
 
-
-
     When the user hovers over Men > Tops > Jackets And clicks on Jackets
     Then the Jackets category page should be displayed
 
@@ -48,9 +46,6 @@ Feature: Icons in the tab menu work control
     When the user hovers over Men > Bottoms > Shorts And clicks on Shorts
     Then the Shorts category page should be displayed
 
-
-
-
     When the user hovers over Gear > Bags And clicks on Bags
     Then the Bags category page should be displayed
 
@@ -60,12 +55,8 @@ Feature: Icons in the tab menu work control
     When the user hovers over Gear > Watches And clicks on Watches
     Then the Watches category page should be displayed
 
-
-
     When the user hovers over Training > Video Download And clicks on Video Download
     Then the Video Download category page should be displayed
-
-
 
     And clicks on the Sale ikon
     Then the Sale category page should be displayed

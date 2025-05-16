@@ -9,11 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class TC_704_TabMenu extends GWD{
+public class TC_704_TabMenu extends GWD {
 
-
-
-    Actions actions=new Actions(GWD.getDriver());
+    Actions actions = new Actions(GWD.getDriver());
     Elements el = new Elements();
 
     @And("clicks on the What's New ikon")
@@ -154,7 +152,7 @@ public class TC_704_TabMenu extends GWD{
 
     @When("the user hovers over Men > Tops > Tees And clicks on Tees")
     public void theUserHoversOverMenTopsTeesAndClicksOnTees() {
-            actions.moveToElement(el.menikon)
+        actions.moveToElement(el.menikon)
                 .moveToElement(el.topsmen)
                 .moveToElement(el.teesmen)
                 .click()
@@ -171,8 +169,6 @@ public class TC_704_TabMenu extends GWD{
                 .click()
                 .build()
                 .perform();
-
-
 
     }
 
