@@ -20,6 +20,7 @@ public class GWD {
     //driver -> threadDriver.get() -> bulunduğum thread deki driver ı al
     //threadDriver.set(driver) -> bulunduğum threade driver set et
 
+
     public static WebDriver getDriver() {
         Locale.setDefault(new Locale("EN"));
         System.setProperty("user.language", "EN");

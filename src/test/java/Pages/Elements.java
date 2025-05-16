@@ -310,5 +310,166 @@ public class Elements extends ParentPage {
         }
         return null;
     }
+
+
+
+    @FindBy(xpath = "(//*[@class='level-top ui-corner-all'])[1]/span")
+    public WebElement whatsnewikon;
+
+    @FindBy(xpath = "//*[@id='page-title-heading']/span")
+    public WebElement whatsnewassert;
+
+
+
+
+    @FindBy(xpath = "//span[text()='Women']")
+    public WebElement womenikon;
+
+    @FindBy(xpath = "(//span[text()='Tops'])[1]")
+    public WebElement tops;
+
+    @FindBy(xpath = "(//span[text()='Jackets'])[1]")
+    public WebElement jackets;
+
+    @FindBy(xpath = "(//span[text()='Jackets'])[3]")
+    public WebElement jacketsassert;
+
+    @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[1]")
+    public WebElement hoodies_sweatshirts;
+
+    @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[3]")
+    public WebElement hoodies_sweatshirtsassert;
+
+    @FindBy(xpath = "(//span[text()='Tees'])[1]")
+    public WebElement tees;
+
+    @FindBy(xpath = "(//span[text()='Tees'])[3]")
+    public WebElement teesassert;
+
+    @FindBy(xpath = "(//span[text()='Bras & Tanks'])[1]")
+    public WebElement bras_tanks;
+
+    @FindBy(xpath = "(//span[text()='Bras & Tanks'])[2]")
+    public WebElement bras_tanksassert;
+
+    @FindBy(xpath = "(//span[text()='Bottoms'])[1]")
+    public WebElement bottoms;
+
+    @FindBy(xpath = "(//span[text()='Pants'])[1]")
+    public WebElement pants;
+
+    @FindBy(xpath = "(//span[text()='Pants'])[3]")
+    public WebElement pantsassert;
+
+    @FindBy(xpath = "(//span[text()='Shorts'])[1]")
+    public WebElement shorts;
+
+    @FindBy(xpath = "(//span[text()='Shorts'])[3]")
+    public WebElement shortsassert;
+
+
+
+
+    @FindBy(xpath = "//span[text()='Men']")
+    public WebElement menikon;
+
+    @FindBy(xpath = "(//span[text()='Tops'])[2]")
+    public WebElement topsmen;
+
+    @FindBy(xpath = "(//span[text()='Jackets'])[2]")
+    public WebElement jacketsmen;
+
+    @FindBy(xpath = "(//span[text()='Jackets'])[3]")
+    public WebElement jacketsmenassert;
+
+    @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[2]")
+    public WebElement hoodies_sweatshirtsmen;
+
+    @FindBy(xpath = "(//span[text()='Hoodies & Sweatshirts'])[3]")
+    public WebElement hoodies_sweatshirtsmenassert;
+
+    @FindBy(xpath = "(//span[text()='Tees'])[2]")
+    public WebElement teesmen;
+
+    @FindBy(xpath = "(//span[text()='Tees'])[3]")
+    public WebElement teesmenassert;
+
+    @FindBy(xpath = "//span[text()='Tanks']")
+    public WebElement tanksmen;
+
+    @FindBy(xpath = "(//span[text()='Tanks'])[2]")
+    public WebElement tanksmenassert;
+
+    @FindBy(xpath = "(//span[text()='Bottoms'])[2]")
+    public WebElement bottomsmen;
+
+    @FindBy(xpath = "(//span[text()='Pants'])[2]")
+    public WebElement pantsmen;
+
+    @FindBy(xpath = "(//span[text()='Pants'])[3]")
+    public WebElement pantsmenassert;
+
+    @FindBy(xpath = "(//span[text()='Shorts'])[2]")
+    public WebElement shortsmen;
+
+    @FindBy(xpath = "(//span[text()='Shorts'])[3]")
+    public WebElement shortsmenassert;
+
+
+    @FindBy(id = "ui-id-6")
+    public WebElement gear;
+
+    @FindBy(xpath = "//span[text()='Bags']")
+    public WebElement bags;
+
+    @FindBy(xpath = "(//span[text()='Bags'])[2]")
+    public WebElement bagsassert;
+
+    @FindBy(xpath = "//span[text()='Fitness Equipment']")
+    public WebElement fitnessequipment;
+
+    @FindBy(xpath = "(//span[text()='Fitness Equipment'])[2]")
+    public WebElement fitnessequipmentassert;
+
+    @FindBy(xpath = "//span[text()='Watches']")
+    public WebElement watches;
+
+    @FindBy(xpath = "(//span[text()='Watches'])[2]")
+    public WebElement watchesassert;
+
+
+
+
+
+    @FindBy(xpath = "//span[text()='Training']")
+    public WebElement training;
+
+    @FindBy(xpath = "//span[text()='Video Download']")
+    public WebElement videodownload;
+
+    @FindBy(xpath = "(//span[text()='Video Download'])[2]")
+    public WebElement videodownloadassert;
+
+
+
+
+    @FindBy(xpath = "//span[text()='Sale']")
+    public WebElement sale;
+
+    @FindBy(xpath = "(//span[text()='Sale'])[2]")
+    public WebElement saleassert;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
