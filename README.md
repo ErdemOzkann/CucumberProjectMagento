@@ -8,8 +8,8 @@
 
 # 🛒 CucumberProjectMagento
 
-> An e-commerce test automation project based on **Magento Open Source**  
-> Developed using Cucumber + Selenium + Java technologies.
+ An e-commerce test automation project based on **Magento Open Source**  
+ Developed using Cucumber + Selenium + Java technologies.
 
 ---
 
